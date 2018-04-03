@@ -28,6 +28,10 @@ export default class Player extends cc.Component {
     @property
     accel: number = 0;
 
+    // 跳跃音效资源
+    @property(cc.AudioClip)
+    jumpAudio: cc.AudioClip = null;
+
     private accLeft: boolean;
     private accRight: boolean;
     private jumpAction: cc.Action;
@@ -38,8 +42,17 @@ export default class Player extends cc.Component {
         let jumpUp: cc.ActionInterval = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
         // 下落
         let jumpDown: cc.ActionInterval = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
+
+        // 添加一个回调函数，用于在动作结束时调用我们定义的其他方法
+        let callback = cc.callFunc(this.playJumpSound, this);
+
         // 不断重复
-        return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+        return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback));
+    }
+
+    private playJumpSound(): void {
+        // 调用声音引擎播放声音
+        cc.audioEngine.playEffect(this.jumpAudio, false);
     }
 
     private setInputControl(): void {

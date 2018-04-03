@@ -34,6 +34,10 @@ export default class Game extends cc.Component {
     @property(cc.Label)
     scoreDisplay: cc.Label = null;
 
+    // 得分音效资源
+    @property(cc.AudioClip)
+    scoreAudio: cc.AudioClip = null;
+
     public timer: number;
     public starDuration: number;
 
@@ -67,13 +71,16 @@ export default class Game extends cc.Component {
         return cc.p(randX, randY);
     }
 
-    public gainScore() {
+    public gainScore(): void {
         this.score += 1;
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
+
+        // 播放得分音效
+        cc.audioEngine.playEffect(this.scoreAudio, false);
     }
 
-    private gameOver() {
+    private gameOver(): void {
         this.player.stopAllActions(); //停止 player 节点的跳跃动作
         cc.director.loadScene('game');
     }
