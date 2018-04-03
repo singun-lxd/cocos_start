@@ -1,81 +1,54 @@
-2018-04-03T02:09:53.102Z - normal: Load ~/.CocosCreator/settings.json
-2018-04-03T02:09:53.105Z - normal: checking language setting...
-2018-04-03T02:09:53.105Z - normal: Language: zh
-2018-04-03T02:09:54.766Z - success: protocol editor-framework registered
-2018-04-03T02:09:54.766Z - success: protocol app registered
-2018-04-03T02:09:54.766Z - success: protocol theme registered
-2018-04-03T02:09:54.766Z - success: protocol packages registered
-2018-04-03T02:09:54.766Z - success: protocol unpack registerred
-2018-04-03T02:09:54.766Z - success: protocol disable-commonjs registerred
-2018-04-03T02:09:55.519Z - normal: connected!
-2018-04-03T02:09:55.524Z - normal: Check project D:\cmcm_source\start_project
-2018-04-03T02:09:55.532Z - normal: Initializing Cocos2d
-2018-04-03T02:09:55.749Z - normal: Initializing Asset Database
-2018-04-03T02:09:55.796Z - success: protocol uuid registerred
-2018-04-03T02:09:55.796Z - success: protocol db registerred
-2018-04-03T02:09:55.796Z - success: protocol thumbnail registerred
-2018-04-03T02:09:55.796Z - normal: Loading editor/builtin packages
-2018-04-03T02:09:55.833Z - success: anysdk loaded
-2018-04-03T02:09:55.935Z - success: assets loaded
-2018-04-03T02:09:55.937Z - success: builder loaded
-2018-04-03T02:09:55.938Z - success: cocos-analytics loaded
-2018-04-03T02:09:55.940Z - success: console loaded
-2018-04-03T02:09:55.969Z - success: fb-instant-games loaded
-2018-04-03T02:09:55.971Z - success: hierarchy loaded
-2018-04-03T02:09:55.974Z - success: inspector loaded
-2018-04-03T02:09:55.975Z - success: keystore loaded
-2018-04-03T02:09:55.976Z - success: node-library loaded
-2018-04-03T02:09:55.979Z - success: package-asset loaded
-2018-04-03T02:09:55.980Z - success: preferences loaded
-2018-04-03T02:09:55.982Z - success: project-exporter loaded
-2018-04-03T02:09:55.994Z - success: project-importer loaded
-2018-04-03T02:09:55.996Z - success: project-settings loaded
-2018-04-03T02:09:55.997Z - success: ui-kit loaded
-2018-04-03T02:09:55.998Z - success: ui-grid loaded
-2018-04-03T02:09:56.000Z - success: scene loaded
-2018-04-03T02:09:56.001Z - success: sprite-editor loaded
-2018-04-03T02:09:56.003Z - success: store loaded
-2018-04-03T02:09:56.007Z - success: timeline loaded
-2018-04-03T02:09:56.007Z - normal: Loading builtin packages
-2018-04-03T02:09:56.008Z - success: asset-db-debugger loaded
-2018-04-03T02:09:56.010Z - success: code-editor loaded
-2018-04-03T02:09:56.011Z - success: color-picker loaded
-2018-04-03T02:09:56.012Z - success: package-manager loaded
-2018-04-03T02:09:56.016Z - success: sdkbox loaded
-2018-04-03T02:09:56.018Z - success: tester loaded
-2018-04-03T02:09:56.019Z - success: ui-kit-preview-extra loaded
-2018-04-03T02:09:56.021Z - success: ui-kit-preview loaded
-2018-04-03T02:09:56.022Z - success: ui-tree loaded
-2018-04-03T02:09:56.893Z - normal: Initializing project D:\cmcm_source\start_project
-2018-04-03T02:09:56.896Z - normal: Loading packages
-2018-04-03T02:09:56.899Z - normal: Watching packages
-2018-04-03T02:09:56.909Z - normal: Run Application
-2018-04-03T02:10:00.430Z - success: preview server running at http://localhost:7456
-2018-04-03T02:10:03.931Z - normal: 1.9.0
-2018-04-03T02:13:57.679Z - success: API data generated and copied to D:\cmcm_source\start_project\creator.d.ts
-2018-04-03T02:15:32.142Z - success: TypeScript Configuration file has been copied to D:\cmcm_source\start_project\tsconfig.json
-2018-04-03T02:15:41.366Z - success: Chrome debug setting has been updated to .vscode/launch.json, please install Debugger for Chrome VS Code extension to debug your project.
-2018-04-03T02:15:46.262Z - success: API data generated and copied to D:\cmcm_source\start_project\creator.d.ts
-2018-04-03T02:22:21.251Z - failed: load script [D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js] failed : TypeError: Cannot read property 'on' of undefined
-    at __define (D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:60:19)
-    at D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:91:13
-    at Object.<anonymous> (D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:98:11)
-    at Object.<anonymous> (D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:101:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2018-04-03T02:22:38.679Z - failed: load script [D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js] failed : TypeError: Cannot read property 'on' of undefined
-    at __define (D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:60:19)
-    at D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:91:13
-    at Object.<anonymous> (D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:98:11)
-    at Object.<anonymous> (D:\cmcm_source\start_project\temp\quick-scripts\assets\scripts\Player.js:101:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2018-04-03T02:41:41.012Z - info: shutdown preview server
+2018-04-03T03:12:54.719Z - normal: Load ~/.CocosCreator/settings.json
+2018-04-03T03:12:54.722Z - normal: checking language setting...
+2018-04-03T03:12:54.723Z - normal: Language: zh
+2018-04-03T03:12:56.472Z - success: protocol editor-framework registered
+2018-04-03T03:12:56.473Z - success: protocol app registered
+2018-04-03T03:12:56.473Z - success: protocol theme registered
+2018-04-03T03:12:56.473Z - success: protocol packages registered
+2018-04-03T03:12:56.473Z - success: protocol unpack registerred
+2018-04-03T03:12:56.473Z - success: protocol disable-commonjs registerred
+2018-04-03T03:12:56.880Z - normal: connected!
+2018-04-03T03:12:56.882Z - normal: Check project D:\online_projects\cocos_start
+2018-04-03T03:12:56.884Z - normal: Initializing Cocos2d
+2018-04-03T03:12:57.054Z - normal: Initializing Asset Database
+2018-04-03T03:12:57.083Z - success: protocol uuid registerred
+2018-04-03T03:12:57.083Z - success: protocol db registerred
+2018-04-03T03:12:57.083Z - success: protocol thumbnail registerred
+2018-04-03T03:12:57.083Z - normal: Loading editor/builtin packages
+2018-04-03T03:12:57.099Z - success: anysdk loaded
+2018-04-03T03:12:57.224Z - success: assets loaded
+2018-04-03T03:12:57.226Z - success: builder loaded
+2018-04-03T03:12:57.228Z - success: cocos-analytics loaded
+2018-04-03T03:12:57.231Z - success: console loaded
+2018-04-03T03:12:57.265Z - success: fb-instant-games loaded
+2018-04-03T03:12:57.268Z - success: hierarchy loaded
+2018-04-03T03:12:57.269Z - success: inspector loaded
+2018-04-03T03:12:57.270Z - success: keystore loaded
+2018-04-03T03:12:57.273Z - success: node-library loaded
+2018-04-03T03:12:57.274Z - success: package-asset loaded
+2018-04-03T03:12:57.276Z - success: preferences loaded
+2018-04-03T03:12:57.277Z - success: project-exporter loaded
+2018-04-03T03:12:57.289Z - success: project-importer loaded
+2018-04-03T03:12:57.291Z - success: project-settings loaded
+2018-04-03T03:12:57.292Z - success: ui-kit loaded
+2018-04-03T03:12:57.293Z - success: ui-grid loaded
+2018-04-03T03:12:57.295Z - success: scene loaded
+2018-04-03T03:12:57.296Z - success: sprite-editor loaded
+2018-04-03T03:12:57.298Z - success: store loaded
+2018-04-03T03:12:57.301Z - success: timeline loaded
+2018-04-03T03:12:57.302Z - normal: Loading builtin packages
+2018-04-03T03:12:57.304Z - success: asset-db-debugger loaded
+2018-04-03T03:12:57.305Z - success: code-editor loaded
+2018-04-03T03:12:57.305Z - success: color-picker loaded
+2018-04-03T03:12:57.307Z - success: package-manager loaded
+2018-04-03T03:12:57.310Z - success: sdkbox loaded
+2018-04-03T03:12:57.312Z - success: tester loaded
+2018-04-03T03:12:57.313Z - success: ui-kit-preview-extra loaded
+2018-04-03T03:12:57.314Z - success: ui-kit-preview loaded
+2018-04-03T03:12:57.315Z - success: ui-tree loaded
+2018-04-03T03:12:58.374Z - normal: Initializing project D:\online_projects\cocos_start
+2018-04-03T03:12:58.378Z - normal: Loading packages
+2018-04-03T03:12:58.383Z - normal: Watching packages
+2018-04-03T03:12:58.391Z - normal: Run Application
+2018-04-03T03:12:58.752Z - success: preview server running at http://localhost:7456
+2018-04-03T03:13:02.443Z - normal: 1.9.0
