@@ -30,7 +30,12 @@ export default class Game extends cc.Component {
     @property(cc.Node)
     player: cc.Node = null;
 
+    // score label 的引用
+    @property(cc.Label)
+    scoreDisplay: cc.Label = null;
+
     private groundY: number;
+    private score: number;
 
     public spawnNewStar(): void {
         // 使用给定的模板在场景中生成一个新节点
@@ -55,6 +60,12 @@ export default class Game extends cc.Component {
         return cc.p(randX, randY);
     }
 
+    public gainScore() {
+        this.score += 1;
+        // 更新 scoreDisplay Label 的文字
+        this.scoreDisplay.string = 'Score: ' + this.score.toString();
+    }
+
     // LIFE-CYCLE CALLBACKS:
 
     protected onLoad(): void {
@@ -62,5 +73,8 @@ export default class Game extends cc.Component {
         this.groundY = this.ground.y + this.ground.height/2;
         // 生成一个新的星星
         this.spawnNewStar();
+
+        // 初始化计分
+        this.score = 0;
     }
 }
