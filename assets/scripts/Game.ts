@@ -32,13 +32,16 @@ export default class Game extends cc.Component {
 
     private groundY: number;
 
-    private spawnNewStar(): void {
+    public spawnNewStar(): void {
         // 使用给定的模板在场景中生成一个新节点
         let newStar: cc.Node = cc.instantiate(this.starPrefab);
         // 将新增的节点添加到 Canvas 节点下面
         this.node.addChild(newStar);
         // 为星星设置一个随机位置
         newStar.setPosition(this.getNewStarPosition());
+
+        // 将 Game 组件的实例传入星星组件
+        newStar.getComponent('Star').game = this;
     }
 
     private getNewStarPosition(): cc.Vec2 {
@@ -60,6 +63,4 @@ export default class Game extends cc.Component {
         // 生成一个新的星星
         this.spawnNewStar();
     }
-
-    // update (dt) {}
 }

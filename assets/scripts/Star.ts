@@ -21,13 +21,28 @@ export default class Star extends cc.Component {
     @property(Game)
     game: Game = null;
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {}
-
-    start () {
-
+    private getPlayerDistance(): number {
+        // 根据 player 节点位置判断距离
+        let playerPos: cc.Vec2 = this.game.player.getPosition();
+        // 根据两点位置计算两点之间距离
+        let dist: number = cc.pDistance(this.node.position, playerPos);
+        return dist;
     }
 
-    // update (dt) {}
+    private onPicked(): void {
+        // 当星星被收集时，调用 Game 脚本中的接口，生成一个新的星星
+        this.game.spawnNewStar();
+        // 然后销毁当前星星节点
+        this.node.destroy();
+    }
+
+    // LIFE-CYCLE CALLBACKS:
+    protected update(dt: number): void {
+        // 每帧判断和主角之间的距离是否小于收集距离
+        if (this.getPlayerDistance() < this.pickRadius) {
+            // 调用收集行为
+            this.onPicked();
+            return;
+        }
+    }
 }
