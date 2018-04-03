@@ -46,5 +46,10 @@ export default class Star extends cc.Component {
             this.onPicked();
             return;
         }
+
+        // 根据 Game 脚本中的计时器更新星星的透明度
+        let opacityRatio: number = 1 - this.game.timer/this.game.starDuration;
+        let minOpacity: number = 50;
+        this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
     }
 }
